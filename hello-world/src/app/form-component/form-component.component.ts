@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-form-component',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-component.component.scss']
 })
 export class FormComponentComponent {
+
+  submit(login: NgForm) {
+    console.log('Form submitted ', login);
+  }
 
 }
