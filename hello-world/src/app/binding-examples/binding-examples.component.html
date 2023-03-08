@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+
+<h2>String {{ topic }}</h2>
+
+<h3>Property Binding has boolean values</h3>
+<img [src]="image" class="center image" alt="logo">
+
+<hr>
+
+<h3>Event Binding from View to Component on Action</h3>
+<button (click)="onClick()" class="center btn">Click Event</button>
+
+<hr>
+
+<h3>Two Way Data Binding</h3>
+<input [(ngModel)]="value" type="text" class="center value">
+<h3 class="center">{{ value }}</h3>
